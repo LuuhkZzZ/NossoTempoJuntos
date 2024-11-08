@@ -29,7 +29,7 @@ h1 {
 }
 
 .subtitle {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #ffffff;
 }
 
@@ -54,6 +54,7 @@ h1 {
     justify-content: center;
     gap: 10px;
     margin: 20px 0;
+    flex-wrap: wrap;
 }
 
 .photo-gallery img {
@@ -74,4 +75,54 @@ h1 {
     font-size: 1.2em;
     color: #e63946;
     margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .time-display {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .message {
+        font-size: 0.9em;
+    }
+
+    .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .photo-gallery img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .photo-gallery img:nth-child(3) {
+        margin-top: 10px;
+    }
+
+    .date {
+        font-size: 1em;
+    }
+
+    .love-message {
+        font-size: 1.1em;
+    }
 }
