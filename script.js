@@ -11,7 +11,7 @@ function updateTime() {
     const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
     document.getElementById("time").innerHTML = 
-        `${years} anos, ${days} dias, ${hours} horas`;
+        `${years} anos, ${days} dias e ${hours} horas`;
 }
 
 setInterval(updateTime, 3600000);
