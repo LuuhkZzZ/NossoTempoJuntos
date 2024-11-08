@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #0d1b2a;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #14213d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.highlight {
+    color: #e63946;
+}
+
+.subtitle {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.time-display {
+    background-color: #1d3557;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.message {
+    font-size: 1em;
+    color: #f1faee;
+    margin-top: 15px;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.photo-gallery img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.date {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.love-message {
+    font-size: 1.2em;
+    color: #e63946;
+    margin-top: 5px;
+}
