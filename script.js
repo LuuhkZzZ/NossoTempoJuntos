@@ -18,14 +18,14 @@ function updateTime() {
         months += 12;
     }
 
-    const yearsText = years === 1 ? "1 Ano" : years > 1 ? `${years} Anos` : "";
-    const monthsText = months === 1 ? "1 Mês" : months > 1 ? `${months} Meses` : "";
-    const daysText = days === 1 ? "1 Dia" : days > 1 ? `${days} Dias` : "";
+    const yearsText = years === 1 ? "1 ano" : years > 1 ? `${years} anos` : "";
+    const monthsText = months === 1 ? "1 mês" : months > 1 ? `${months} meses` : "";
+    const daysText = days === 1 ? "1 dia" : days > 1 ? `${days} dias` : "";
 
     const timeParts = [yearsText, monthsText, daysText].filter(Boolean);
     const timeString = timeParts.length > 1
         ? timeParts.slice(0, -1).join(", ") + " e " + timeParts[timeParts.length - 1]
-        : timeParts[0] || "0 Dias";
+        : timeParts[0] || "0 dias";
 
     document.getElementById("time").innerHTML = timeString;
 
@@ -36,7 +36,7 @@ function updateTime() {
     } else {
         const progress = ((months * 30 + days) / 365) * 100;
         document.getElementById("progress-bar").style.width = `${progress}%`;
-        document.getElementById("progress-percentage").innerText = `${Math.round(progress)}%`;
+        document.getElementById("progress-percentage").innerText = `${progress.toFixed(2)}%`;
     }
 }
 
