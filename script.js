@@ -18,11 +18,15 @@ function updateTime() {
         months += 12;
     }
 
-    const yearsText = years === 1 ? "1 ano" : years > 1 ? `${years} anos` : "";
-    const monthsText = months === 1 ? "1 mês" : months > 1 ? `${months} meses` : "";
-    const daysText = days === 1 ? "1 dia" : days > 1 ? `${days} dias` : "";
+    const yearsText = years === 1 ? "1 Ano" : years > 1 ? `${years} Anos` : "";
+    const monthsText = months === 1 ? "1 Mês" : months > 1 ? `${months} Meses` : "";
+    const daysText = days === 1 ? "1 Dia" : days > 1 ? `${days} Dias` : "";
 
-    const timeString = [yearsText, monthsText, daysText].filter(Boolean).join(", ");
+    const timeParts = [yearsText, monthsText, daysText].filter(Boolean);
+    const timeString = timeParts.length > 1
+        ? timeParts.slice(0, -1).join(", ") + " e " + timeParts[timeParts.length - 1]
+        : timeParts[0] || "0 Dias";
+
     document.getElementById("time").innerHTML = timeString;
 
     if (months === 0 && days === 0) {
@@ -60,7 +64,6 @@ function startDailyUpdate() {
 }
 startDailyUpdate();
 
-// Animação ao rolar
 document.addEventListener("DOMContentLoaded", () => {
     const fadeInElements = document.querySelectorAll('.fade-in');
 
