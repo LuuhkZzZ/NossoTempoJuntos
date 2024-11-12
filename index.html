@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosso Tempo Juntos</title>
+    
     <link rel="stylesheet" href="styles.css">
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head> 
 <body>
     <div class="container">
         <h1>Nosso Tempo <span class="highlight">Juntos</span></h1>
-        <p class="subtitle">Estamos há</p>
         
         <div class="time-display">
-            <span id="time">00 anos, 00 dias e 00 horas</span>
+            <span id="time">00 anos, 00 meses e 00 dias</span>
         </div>
         
-        <p class="message">Da minha melhor escolha!</p>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar">
+                <span id="progress-percentage">0%</span>
+            </div>
+        </div>
         
         <div class="photo-gallery">
             <img src="foto1.jpg" alt="Foto 1">
             <img src="foto2.jpg" alt="Foto 2">
-            <img src="foto3.jpg" alt="Foto 3">
         </div>
 
         <p class="date">12/11/2022</p>
-        <p class="love-message">Te amo, obrigado por tudo ❤️</p>
+
+        <p class="love-message">
+            Te amo <span class="heart">❤️</span>
+          </p>
+          
     </div>
     <script src="script.js"></script>
 </body>
