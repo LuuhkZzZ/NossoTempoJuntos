@@ -40,6 +40,7 @@ h1 {
   background-color: #263b68;
   border-radius: 15px;
   margin: 20px 0;
+  margin-top: 30px;
   position: relative;
 }
 
@@ -68,6 +69,7 @@ h1 {
   display: inline-block;
   padding: 10px;
   margin: 10px 0;
+  margin-top: 30px;
   font-size: 1.2em;
   color: #fff;
 }
@@ -89,14 +91,34 @@ h1 {
   height: 100px;
   object-fit: cover;
   border-radius: 8px;
-  margin-top: 15px;
+  margin-top: 50px;
   transition: transform 0.3s ease;
 }
 
-.date {
+.below-date {
   font-size: 1.1em;
-  color: #ffffff;
-  margin-top: 30px;
+  color: #00eeff;
+  margin-top: 5px;
+}
+
+.date {
+  font-size: 1.2em;
+  color: #ffef15;
+  margin-bottom: 5px;
+}
+
+.below-date1 {
+  font-size: 1.2em;
+  color: #f1faee;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.below-date2 {
+  font-size: 1.2em;
+  color: #f1faee;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .love-message {
