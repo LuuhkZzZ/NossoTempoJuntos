@@ -20,7 +20,7 @@ function updateTime() {
 
     const yearsText = years === 1 ? "1 Ano" : years > 1 ? `${years} Anos` : "";
     const monthsText = months === 1 ? "1 Mês" : months > 1 ? `${months} Meses` : "";
-    const daysText = days === 1 ? "1 DDia" : days > 1 ? `${days} Dias` : "";
+    const daysText = days === 1 ? "1 Dia" : days > 1 ? `${days} Dias` : "";
 
     const timeParts = [yearsText, monthsText, daysText].filter(Boolean);
     const timeString = timeParts.length > 1
