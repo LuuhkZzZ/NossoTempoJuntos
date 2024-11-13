@@ -20,9 +20,16 @@ body {
   backdrop-filter: blur(10px);
 }
 
+* {
+  text-shadow: 0.2px 0.2px 0.2px black, -0.2px -0.2px 0.2px black, 0.2px -0.2px 0.2px black, -0.2px 0.2px 0.2px black;
+}
+
+h1, p, span, .date, .below-date, .below-date1, .below-date2, .highlight {
+  text-shadow: 0.2px 0.2px 0.2px black, -0.2px -0.2px 0.2px black, 0.2px -0.2px 0.2px black, -0.2px 0.2px 0.2px black;
+}
+
 h1 {
   font-size: 2rem;
-  margin-bottom: 10px;
   color: #ffffff;
 }
 
@@ -34,29 +41,40 @@ h1 {
   width: 100%;
   height: 30px;
   background-color: #263b68;
-  border-radius: 15px;
+  border-radius: 10px;
   margin: 20px 0;
-  margin-top: 30px;
   position: relative;
+  overflow: hidden;
+}
+
+.progress-label {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #ffffff;
 }
 
 .progress-bar {
   height: 100%;
-  width: 0;
   background-color: #4caf50;
-  border-radius: 15px;
+  border-radius: 10px;
+  transition: width 0.4s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-weight: bold;
+  font-size: 14px;
 }
 
 #progress-percentage {
   position: absolute;
-  width: 100%;
-  text-align: center;
-  font-size: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  pointer-events: none;
 }
 
 .time-display {
@@ -65,9 +83,19 @@ h1 {
   display: inline-block;
   padding: 10px;
   margin: 10px 0;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 40px;
   font-size: 1.2em;
   color: #fff;
+}
+
+.below-time {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+  color: #ffffff;
 }
 
 .message {
@@ -151,5 +179,52 @@ h1 {
   .container {
     margin-top: 0;
     padding: 15px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  
+  .container {
+    max-width: 900px;
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .time-display {
+    font-size: 1.5em;
+    padding: 15px 30px;
+  }
+
+  .progress-container {
+    height: 40px;
+    margin: 30px 0;
+  }
+
+  .progress-label {
+    font-size: 1.5em;
+  }
+
+  .photo-gallery {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .photo-gallery img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .date, .below-date, .below-date1, .below-date2 {
+    font-size: 1.5em;
+  }
+
+  .love-message {
+    font-size: 1.5em;
   }
 }
