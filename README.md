@@ -1,6 +1,6 @@
 # Projeto: Nosso Tempo Juntos
 
-Este projeto simplesvfoi criado como uma maneira especial de comemorar o tempo em que eu e minha namorada passamos juntos. Ele calcula o tempo desde o pedido de namoro e exibe o progresso até o próximo aniversário. Além disso, mostra uma linha do tempo com fotos e anotações sobre momentos importantes do nosso relacionamento.
+Este projeto simples foi criado como uma maneira especial de comemorar o tempo em que eu e minha namorada passamos juntos. Ele calcula o tempo desde o pedido de namoro e exibe o progresso até o próximo aniversário. Além disso, mostra uma linha do tempo com fotos e anotações sobre momentos importantes do nosso relacionamento.
 
 ## Descrição
 
